@@ -1,0 +1,25 @@
+{
+  "exclude": ["node_modules", "**/dist/**/*"],
+  "include": ["src/**/*"],
+  "compilerOptions": {
+    "strict": true,
+    "target": "ES2020",
+    "declaration": true,
+    "lib": ["DOM", "ESNext"],
+    "noImplicitAny": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "sourceMap": true,
+    "jsx": "react",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "removeComments": false,
+    "noUnusedLocals": true,
+    "pretty": true,
+    "stripInternal": true,
+    "skipLibCheck": true,
+    "outDir": "./dist"
+  }
+}
