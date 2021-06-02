@@ -12,9 +12,18 @@
   border-radius: 18px;
   box-shadow: 6px 8px 8px -4px rgba(34, 60, 80, 0.2);
 
+  .ButtonsGroup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
   button {
     margin-top: 10px;
+    margin-left: 10px;
 
-    width: 130px;
+    width: 120px;
+
+    font-size: 12px;
   }
 }

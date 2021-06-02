@@ -1,3 +1,3 @@
-# real-estate-review-system
+# Учебный проект (real-estate-review-system)[https://revidovich.github.io/animation-in-viewport]
 
- Для установки всех зависимостей использовать комнаду `yarn` (в качестве пакетного менеджера используется yarn), для запуска проекта: `yarn dev`
+Используемые технологии: Typescript, React, Redux, MUI
