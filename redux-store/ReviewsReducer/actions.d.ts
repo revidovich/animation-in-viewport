@@ -1,7 +1,11 @@
-import { AnyAction } from 'redux';
-import { ThunkAction } from 'redux-thunk';
-import { RootState } from '../store';
 export declare const UPDATE_REVIEWS: string;
+declare type UpdateReviewsType = {
+    ({ type, payload }: {
+        type: string;
+        payload: JSON;
+    }): void;
+};
 export declare function updateReviews({ profileType, }: {
     profileType: string;
-}): ThunkAction<void, RootState, unknown, AnyAction>;
+}): (dispatch: UpdateReviewsType) => Promise<void>;
+export {};

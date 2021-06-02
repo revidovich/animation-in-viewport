@@ -1,4 +1,12 @@
-import { PayloadAction } from '@reduxjs/toolkit';
+import { HouseData } from '../../types';
+declare type state = {
+    properties: HouseData[];
+};
+declare type actionType = {
+    type: string;
+    payload?: HouseData[];
+};
 export declare function propertiesReducer(state: {
-    properties: import("../../types").HouseData[];
-} | undefined, action: PayloadAction): unknown;
+    properties: HouseData[];
+} | undefined, action: actionType): state;
+export {};

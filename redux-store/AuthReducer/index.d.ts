@@ -1,4 +1,5 @@
 import { AsyncThunk, PayloadAction } from '@reduxjs/toolkit';
+import type { RootState } from '../store';
 export declare type PayloadType = {
     login: string;
     password: string;
@@ -37,10 +38,10 @@ export declare const logIn: import("@reduxjs/toolkit").ActionCreatorWithPayload<
 }, string>, logOut: import("@reduxjs/toolkit").ActionCreatorWithoutPayload<string>, refresh: import("@reduxjs/toolkit").ActionCreatorWithPayload<{
     login: string;
 }, string>;
-export declare const selectIsLoggedIn: (state: any) => boolean;
-export declare const selectLoginName: (state: any) => string | null;
-export declare const selectLoading: (state: any) => boolean;
-export declare const selectStatus: (state: any) => boolean | null;
-export declare const selectNetworkError: (state: any) => boolean;
+export declare const selectIsLoggedIn: (state: RootState) => boolean;
+export declare const selectLoginName: (state: RootState) => string | null;
+export declare const selectLoading: (state: RootState) => boolean;
+export declare const selectStatus: (state: RootState) => boolean | null;
+export declare const selectNetworkError: (state: RootState) => boolean;
 declare const _default: import("redux").Reducer<LoginStateType, import("redux").AnyAction>;
 export default _default;

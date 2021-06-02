@@ -1,5 +1,9 @@
-import { AnyAction } from 'redux';
-import { ThunkAction } from 'redux-thunk';
-import { RootState } from '../store';
+declare type UpdateType = {
+    ({ type, payload }: {
+        type: string;
+        payload: JSON;
+    }): void;
+};
 export declare const UPDATE_PROPERTIES: string;
-export declare function updateProperties(): ThunkAction<RootState, void, unknown, AnyAction>;
+export declare function updateProperties(): (dispatch: UpdateType) => Promise<void>;
+export {};

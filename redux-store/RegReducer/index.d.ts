@@ -1,4 +1,5 @@
 import { AsyncThunk, PayloadAction } from '@reduxjs/toolkit';
+import type { RootState } from '../store';
 declare type RegStateType = {
     isLoggedIn: boolean;
     name: string | null;
@@ -18,10 +19,10 @@ export declare const registerSlice: import("@reduxjs/toolkit").Slice<RegStateTyp
     doRegister: (state: import("immer/dist/internal").WritableDraft<RegStateType>, action: PayloadAction<string | null>) => void;
 }, "registerState">;
 export declare const doRegister: import("@reduxjs/toolkit").ActionCreatorWithPayload<string | null, string>;
-export declare const selectIsLoggedIn: (state: any) => any;
-export declare const selectRegName: (state: any) => any;
-export declare const selectRegLoading: (state: any) => any;
-export declare const selectRegStatus: (state: any) => any;
-export declare const selectRegError: (state: any) => any;
+export declare const selectIsLoggedIn: (state: RootState) => boolean;
+export declare const selectRegName: (state: RootState) => string | null;
+export declare const selectRegLoading: (state: RootState) => boolean;
+export declare const selectRegStatus: (state: RootState) => number | null;
+export declare const selectRegError: (state: RootState) => boolean;
 declare const _default: import("redux").Reducer<RegStateType, import("redux").AnyAction>;
 export default _default;
