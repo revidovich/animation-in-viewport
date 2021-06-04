@@ -13,7 +13,7 @@ import { DropzoneDialog } from 'material-ui-dropzone';
 import Loader from '../../App/loader';
 import realEstateApi from '../../utils/RealEstateApi';
 import useInput from '../hooks/useInput';
-import { Pagination } from '../Padination/Pagination';
+import { Pagination } from '../Pagination/Pagination';
 
 import { cnAddBuildingForm } from './cn-building';
 

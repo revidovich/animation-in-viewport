@@ -16,6 +16,8 @@ body {
   margin: 0;
   padding: 0;
 
+  overflow: hidden;
+
   &__Title {
     font-size: 20px;
     text-align: center;

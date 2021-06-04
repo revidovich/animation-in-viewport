@@ -4,7 +4,7 @@ import Container from '@material-ui/core/Container';
 
 import { RootState } from '../../redux-store/store';
 import EstateCardList from '../EstateCardList/EstateCardList';
-import { Pagination } from '../Padination/Pagination';
+import { Pagination } from '../Pagination/Pagination';
 
 import { cnMyProperties } from './cn-my-properties';
 

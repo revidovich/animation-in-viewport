@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux';
 import Container from '@material-ui/core/Container';
 
 import { RootState } from '../../redux-store/store';
-import { Pagination } from '../Padination/Pagination';
+import { Pagination } from '../Pagination/Pagination';
 import Reviews from '../Reviews/index';
 
 import { cnMyReviews } from './cn-my-reviews';

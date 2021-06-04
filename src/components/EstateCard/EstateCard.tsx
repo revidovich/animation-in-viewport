@@ -9,7 +9,7 @@ import { CloseIcon } from '../../assets/icons/CloseIcon';
 import { NextIcon } from '../../assets/icons/NextIcon';
 import { RootState } from '../../redux-store/store';
 import { HouseData } from '../../types';
-import { Pagination } from '../Padination/Pagination';
+import { Pagination } from '../Pagination/Pagination';
 
 import { cnEstateCard } from './cn-EstateCard';
 

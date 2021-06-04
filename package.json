@@ -11,7 +11,7 @@
     "lint:css": "stylelint \"src/**/*.css\"",
     "lint-fix:css": "stylelint \"src/**/*.css\" --fix",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b master -d build"
+    "deploy": "gh-pages -b master -d dist"
   },
   "engines": {
     "node": ">=12.19.0",
